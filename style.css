@@ -306,7 +306,6 @@ h5 {
   padding: 0;
   margin: 0 auto;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -314,6 +313,7 @@ h5 {
   .content {
     padding-top: 0px;
     flex-direction: column;
+    align-items: center;
   }
 }
 
