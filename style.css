@@ -1,0 +1,428 @@
+body {
+  font: 400 15px/1.8 Lato, sans-serif;
+  color: #777;
+  scroll-behavior: smooth;
+  font-family: Lato;
+  overflow-x: hidden;
+}
+
+/* Overwrite default styles of h3 and h4 */
+h1 {
+  margin: 10px 0 30px 0;
+  letter-spacing: 5px;
+  font-size: 50px;
+  color: #111;
+}
+h2 {
+  margin: 10px 0 30px 0;
+  letter-spacing: 5px;
+  font-size: 30px;
+  color: #111;
+}
+h3 {
+  margin: 10px 0 30px 0;
+  letter-spacing: 5px;
+  font-size: 20px;
+  color: #111;
+}
+h4 {
+  letter-spacing: 1px;
+  font-weight: 70%;
+  line-height: 1.8;
+}
+h5 {
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #111;
+}
+
+.container-fluid {
+  padding: 10px 20px 10px 20px;
+}
+.container {
+  padding: 5em 30px;
+}
+
+/*navbar style*/
+/* Add a dark background color with a little bit see-through */
+.navbar {
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.555);
+  border: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px !important;
+  letter-spacing: 4px;
+  font-weight: bold;
+  overflow: auto;
+}
+.navbar li a,
+.navbar .navbar-brand {
+  color: #fff !important;
+}
+/* The active link */
+.navbar-nav li.active a {
+  color: #000 !important;
+  background-color: rgba(190, 228, 181, 0.692) !important;
+}
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.nav .fa-facebook,
+.nav .fa-instagram,
+.nav .fa-youtube-play {
+  color: rgb(255, 255, 255);
+}
+.nav .fa-facebook:hover {
+  color: #3b5998;
+}
+.nav .fa-youtube-play:hover {
+  color: #c4302b;
+}
+.nav .fa-instagram:hover {
+  color: #e4405f;
+}
+
+#highlight-carousel {
+  width: 100%;
+  height: 100vh;
+}
+#highlight-carousel .carousel-caption h1 {
+  font-size: 100px;
+  color: white;
+  letter-spacing: 2px;
+}
+#highlight-carousel .carousel-inner .item {
+  width: 100%;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.img1 {
+  background: url(./images/karma.jpg) no-repeat center center fixed; 
+}
+.img2 {
+  background: url(./images/sharhul.jpg) no-repeat center center fixed; 
+}
+.img3 {
+  background: url(./images/karmafest.jpg) no-repeat center center fixed; 
+}
+
+@media only screen and (max-width: 600px) {
+  #highlight-carousel .carousel-caption h1 { 
+     font-size: 4em; 
+  }
+}
+
+#tribe0 {
+  width: 100%;
+  height: 100%;
+  background: url(./images/ho.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#tribe1 {
+  width: 100%;
+  height: 100%;
+  background: url(./images/santhal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#tribe2 {
+  width: 100%;
+  height: 100%;
+  background: url(./images/munda.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#tribe3 {
+  width: 100%;
+  height: 100%;
+  background: url(./images/oraon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-transparent {
+  width: 100%;
+  max-width: 400px;
+  min-width: 350px;
+  height: 300px;
+  background-color: transparent;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border: 2px solid rgba(7, 7, 7, 0.12);
+  font-size: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.card-transparent .title {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  margin-top: 30px;
+  color: black;
+  letter-spacing: 4px;
+  font-size: 25px;
+}
+.card-transparent .text {
+  width: 80%;
+  /* margin: 0 auto;*/
+  font-size: 15px;
+  font-family: Lato;
+  margin-top: 20px;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.3s ease;
+}
+.card-transparent:hover {
+  height: 500px;
+}
+.card-transparent:hover .text {
+  transition: all 0.3s ease;
+  opacity: 1;
+  max-height: 600px;
+}
+
+#prof-carousel .carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+}
+.prof-about .carousel-control.right,
+.prof-about .carousel-control.left {
+  background-image: none;
+  color: #f4511e;
+}
+.prof-about .carousel-indicators li {
+  border-color: #f4511e;
+}
+.prof-about .carousel-indicators li.active {
+  background-color: #f4511e;
+}
+.prof-about {
+  background: rgb(230, 230, 255);
+  color: #003300;
+  padding: 80px 60px 60px 80px;
+}
+
+.bg-1 {
+  background: #8c8c8c;
+  color: #bdbdbd;
+  height: auto;
+}
+.bg-1 h3 {
+  color: #fff;
+}
+.bg-1 h4 {
+  color: #111;
+}
+
+.item h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  font-weight: 400;
+}
+.item h3 {
+  font-size: 25px;
+  letter-spacing: 5px;
+  color: #111;
+}
+.item span {
+  font-style: normal;
+}
+
+#about p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #111;
+}
+
+.gallery-title {
+  font-size: 45px;
+  color: #111;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 70px;
+}
+
+.filter-button {
+  font-size: 21px;
+  border: 3px solid #42b32f;
+  border-radius: 7px;
+  text-align: center;
+  color: #42b32f;
+  margin-bottom: 30px;
+  letter-spacing: 1.6;
+}
+.filter-button:hover {
+  font-size: 20px;
+  border: 4px solid #42b32f;
+  border-radius: 5px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #5cd65c;
+}
+.btn-default:active .filter-button:active {
+  background-color: #42b32f;
+  color: white;
+}
+
+.gallery_product {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+/*event calendar*/
+#events {
+  width: 100vw;
+  background-color: #1d1d1d;
+  margin: 0;
+}
+
+.content {
+  max-width: 1024px;
+  width: 100%;
+  padding: 0;
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    padding-top: 0px;
+    flex-direction: column;
+  }
+}
+
+#fest0 {
+  width: 100%;
+  height: 100%;
+  background: url(./events/sharul.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#fest1 {
+  width: 100%;
+  height: 100%;
+  background: url(./events/karma.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#fest2 {
+  width: 100%;
+  height: 100%;
+  background: url(./events/karmafest.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  min-width: 350px;
+  height: 300px;
+  background-color: #29292900;
+  margin: 10px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.card .title {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  letter-spacing: 4px;
+  font-size: 25px;
+}
+.card .text {
+  width: 80%;
+  /* margin: 0 auto;*/
+  font-size: 16px;
+  font-family: Lato;
+  color: white;
+  margin-top: 20px;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  height: 500px;
+}
+.card:hover .text {
+  transition: all 0.3s ease;
+  opacity: 1;
+  max-height: 600px;
+}
+
+.logo-small {
+  color: #f4511e;
+  font-size: 50px;
+}
+.logo {
+  color: #f4511e;
+  font-size: 200px;
+}
+#motto .glyphicon {
+  font-size: 70px;
+}
+#motto p {
+  font-size: 50x;
+}
+#contact {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(images/contact.jpg);
+  background-size: cover;
+  color: #111;
+}
+
+#contact a {
+  color: #000;
+  text-decoration: none;
+}
+
+.float-right {
+  float: right;
+}
+
+/* Add a dark background color to the footer */
+footer {
+  background-color: #2d2d30;
+  color: #d3d3d365;
+  padding: 16px;
+  font-size: 17px;
+}
+
+footer a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #339933;
+  text-decoration: none;
+}
