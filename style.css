@@ -85,6 +85,9 @@ h5 {
 }
 
 @media screen and (max-width: 767px) {
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.815);;
+  }
   .social-links {
     display: none !important;
   }
@@ -438,4 +441,10 @@ footer a {
 footer a:hover {
   color: #339933;
   text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    font-size: 14px;
+  }
 }
