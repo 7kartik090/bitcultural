@@ -220,18 +220,18 @@ h5 {
 .prof-about img {
   height: 300px;
   width: 300px; /* Set width to 100% */
-  margin: 0px 2em;
   object-fit: contain;
 }
 .prof-about .row {
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: space-evenly;
 }
 .prof-about .carousel-control.right,
 .prof-about .carousel-control.left {
   background-image: none;
-  color: #f4511e;
+  color: #000000;
 }
 .prof-desc {
   font-size: 1.2em;
@@ -239,6 +239,9 @@ h5 {
 }
 
 @media screen and (max-width: 767px) {
+  .prof-about {
+    padding: 10px;
+  }
   .prof-about img {
     margin: auto;
   }
