@@ -81,6 +81,15 @@
 
     <div id="about">
         <div class="container">
+            <center>
+                <h2><strong><u>BIT CULTURAL SOCIETY</u></strong></h2>
+                <h4><strong>"Weaving threads to our culture"</strong></h4>
+            </center>
+            <p><b>BCS, BIT Cultural Society</b> is an initiative by <b>Professor Ajay Oroan</b> along with some students of BIT Sindri for reinforcing and uplifting the lesser privileged, as well as escorting
+                        and pursuing the motto of welfare for individuals of this institute in every term and aspects. It also showcases the rich traditional culture and art of the indigenous tribes that are found in <b>Jharkhand</b>.
+            </p>        
+            <br>
+
             <div class="content">
                 <!-- card -->
                 <div class="card-transparent">
@@ -191,9 +200,8 @@
                 </div>
 
                 <div align="center">
-                    <button class="btn btn-default filter-button" data-filter="karma19">Karma 2019</button>
+                    <button id="default-gallery" class="btn btn-default filter-button" data-filter="karma19">Karma 2019</button>
                     <button class="btn btn-default filter-button" data-filter="karma18">Karma 2018</button>
-                    
                 </div>
                 <br />
 
@@ -409,6 +417,10 @@
 
     <script>
         $(document).ready(function () {
+            $('#highlight-carousel').carousel({
+                interval: 5000
+            });
+
             // Add smooth scrolling to all links in navbar + footer link
             $(".navbar a, footer a[href='#home']").on('click', function (event) {
                 // Make sure this.hash has a value before overriding default behavior
@@ -431,23 +443,11 @@
 
             $(".filter-button").click(function () {
                 var value = $(this).attr('data-filter');
-                if (value == "all") {
-                    $('.filter').show('1000');
-                }
-                else {
-                    $(".filter").not('.' + value).hide('3000');
-                    $('.filter').filter('.' + value).show('3000');
-                }
+                $(".filter").not('.' + value).hide('3000');
+                $('.filter').filter('.' + value).show('3000');
             });
 
-            if ($(".filter-button").removeClass("active")) {
-                $(this).removeClass("active");
-            }
-            $(this).addClass("active");
-
-            $('#highlight-carousel').carousel({
-                interval: 5000
-            });
+            $("#default-gallery").click();
         });
     </script>
 
