@@ -127,6 +127,13 @@ h5 {
   }
 }
 
+.container p {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-align: justify;
+  color: #111;
+}
+
 #tribe0 {
   width: 100%;
   height: 100%;
@@ -159,7 +166,7 @@ h5 {
 .card-transparent {
   width: 100%;
   max-width: 400px;
-  min-width: 350px;
+  min-width: 310px;
   height: 300px;
   background-color: transparent;
   margin: 10px;
@@ -189,7 +196,7 @@ h5 {
 .card-transparent .text {
   width: 80%;
   /* margin: 0 auto;*/
-  font-size: 15px;
+  font-size: 0.8em;
   font-family: Lato;
   margin-top: 20px;
   opacity: 0;
@@ -205,25 +212,39 @@ h5 {
   max-height: 600px;
 }
 
-#prof-carousel .carousel-inner img {
-  width: 100%; /* Set width to 100% */
-  margin: auto;
+.prof-about {
+  background: rgb(230, 230, 255);
+  color: #003300;
+  padding: 80px;
+}
+.prof-about img {
+  height: 300px;
+  width: 300px; /* Set width to 100% */
+  margin: 0px 2em;
+  object-fit: contain;
+}
+.prof-about .row {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 .prof-about .carousel-control.right,
 .prof-about .carousel-control.left {
   background-image: none;
   color: #f4511e;
 }
-.prof-about .carousel-indicators li {
-  border-color: #f4511e;
+.prof-desc {
+  font-size: 1.2em;
+  text-align: justify;
 }
-.prof-about .carousel-indicators li.active {
-  background-color: #f4511e;
-}
-.prof-about {
-  background: rgb(230, 230, 255);
-  color: #003300;
-  padding: 80px 60px 60px 80px;
+
+@media screen and (max-width: 767px) {
+  .prof-about img {
+    margin: auto;
+  }
+  .prof-desc {
+    display: none;
+  }
 }
 
 .bg-1 {
@@ -250,12 +271,6 @@ h5 {
 }
 .item span {
   font-style: normal;
-}
-
-#about p {
-  font-size: 20px;
-  letter-spacing: 1px;
-  color: #111;
 }
 
 .gallery-title {
@@ -399,7 +414,7 @@ h5 {
   font-size: 70px;
 }
 #motto p {
-  font-size: 50x;
+  font-size: 1em;
 }
 #contact {
   background-image: linear-gradient(
@@ -409,6 +424,7 @@ h5 {
     url(images/contact.jpg);
   background-size: cover;
   color: #111;
+  font-size: 0.8em;
 }
 
 #contact a {
@@ -431,7 +447,7 @@ footer {
   background-color: #2d2d30;
   color: #d3d3d365;
   padding: 16px;
-  font-size: 17px;
+  font-size: 1em;
 }
 
 footer a {
