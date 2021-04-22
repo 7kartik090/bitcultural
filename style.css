@@ -50,7 +50,7 @@ h5 {
   border: 0;
   background-color: rgba(0, 0, 0, 0.769);
   font-family: Montserrat, sans-serif;
-  font-size: 1.2vw;
+  font-size: 1vw;
   letter-spacing: 0.3vw;
   font-weight: bold;
   overflow: hidden;
@@ -101,6 +101,11 @@ h5 {
   .navbar-brand {
     font-size: 1em;
   }
+}
+
+.bcslogo {
+  margin-bottom: 50px;
+
 }
 
 #highlight-carousel {
@@ -450,7 +455,7 @@ h5 {
 footer {
   background-color: #2d2d30;
   color: #d3d3d365;
-  padding: 16px;
+  padding: 2px;
   font-size: 1em;
 }
 
